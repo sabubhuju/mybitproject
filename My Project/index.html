@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+        integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="./css/slimmenu.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="top-header" id="home">
+            <header>
+                <nav class="main-nav">
+                    <div class="site-logo">
+                        <a href="/" title="My School">
+                            <img src="./images/wings.jpg" alt="HTML Project" />
+                        </a>
+                    </div>
+                    <ul id="navigation">
+                        <ul class="menu">
+                            <li><a href="./index.html" title="Home">Home</a></li>
+                            <li><a href="./about.html" title="About Us">About Us</a></li>
+                            <li><a href="./courses.html" title="Courses">Courses</a></li>
+                            <li><a href="./gallery.html" title="Gallery">Gallery</a></li>
+                            <li><a href="./contact.html" title="Contact Us">Contact Us</a></li>
+                        </ul>
+
+
+                </nav>
+            </header>
+        </div>
+        <section class="heading">
+            <div class="heading-box">
+                <div class="description">
+                    <p class="topic">Learn with WINGS HIGH SCHOOL!!</p>
+                    <h2>We are here to provide you a <br><span class="title">"Quality Education."</span></h2>
+                    <p class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum ex sit sed
+                        earum doloremque totam quas, distinctio laboriosam nisi impedit deserunt. Consequatur doloribus,
+                        accusantium quae culpa voluptate ipsa labore et est id possimus consequuntur rerum ea officiis
+                        atque facilis, rem magnam nesciunt? Nesciunt repudiandae nihil, magni totam labore iusto earum
+                        exercitationem perferendis quae. Eius, sunt ad vitae, commodi possimus praesentium modi et
+                        repellat vero non blanditiis! Ea neque quibusdam suscipit culpa eius quae obcaecati cum
+                        doloribus eaque vel nobis, in, fugiat recusandae sapiente aspernatur similique enim non tempore
+                        cupiditate facere magni ab minima laborum! Libero odit distinctio praesentium deleniti!</p>
+                    <div>
+                        <a href="#" title="Read More" class="button">Read More</a>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <img src="./images/building.jpg" alt="header images" width="500px">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--course section-->
+
+    <section class="course">
+        <p class="right">Available<br> Courses:</p>
+        <div class="boxes">
+            <img src="images/science.jpg" alt="science img" style="width:100px;">
+            <h1>Science</h1>
+        </div>
+
+        <div class="boxes">
+            <img src="images/hm.jpg" alt="HM img" style="width:100px;">
+            <h1>Hotel Management</h1>
+        </div>
+
+        <div class="boxes">
+            <img src="images/humanities.jpg" alt="Humanities img" style="width:100px;">
+            <h1>Humanities</h1>
+        </div>
+
+        <div class="boxes">
+            <img src="images/law.jpg" alt="law img" style="width:100px;">
+            <h1>Law</h1>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-main clearfix">
+            <div class="site-logo col">
+                <a href="/" title="My School">
+                    <img src="./images/wings.jpg" alt="My School" />
+                </a>
+            </div>
+            <div class="col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="quick-links">
+                    <li><a href="about.html" title="About Us">About Us</a></li>
+                    <li><a href="courses.html" title="Courses">Courses</a></li>
+                    <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                    <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="col">
+                <h4 class="footer-title">Contact Details</h4>
+                <ul class="contact-detail">
+                    <li>
+                        <svg class="icon icon-location, map">
+                            <use xlink:href="#icon-location, map"></use>
+                        </svg>
+                        <span>Tikathali,Lalitpur</span>
+                    </li>
+                    <li>
+                        <svg class="icon icon-mail">
+                            <use xlink:href="#icon-mail"></use>
+                        </svg>
+                        <a href="mailto:info@wingsschool.com" title="info@wingsschool.com">info@wingsschool.com</a>
+                    </li>
+                    <li>
+                        <svg class="icon icon-phone-square">
+                            <use xlink:href="#icon-phone-square"></use>
+                        </svg>
+                        <a href="tel:+977 0123456789" title="+977 0123456789">+977 0123456789</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr />
+        <p>&copy;2017-
+            <script>let date = new Date(); document.write(date.getFullYear());</script>
+            <a href="/" title="HTML Project">HTML Project</a>, All Rights Reserved!
+        </p>
+    </footer>
+
+    <script src="./js/jquery.slimmenu.min.js" type="text/javascript"></script>
+    <script>
+        $('#navigation').slimmenu(
+            {
+                resizeWidth: '800',
+                collapserTitle: ' ',
+
+            });
+    </script>
+
+
+    <script src="./scripts.js"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" style="height: 0; position: absolute; opacity: 0;">
+        <defs>
+            <symbol id="icon-location" viewBox="0 0 32 32">
+                <path fill="currentColor"
+                    d="M16.002 17.746c3.309 0 6-2.692 6-6s-2.691-6-6-6c-3.309 0-6 2.691-6 6s2.691 6 6 6zM16.002 6.746c2.758 0 5 2.242 5 5s-2.242 5-5 5c-2.758 0-5-2.242-5-5s2.242-5 5-5zM16 0c-6.618 0-12 5.316-12 12.001 0 7 6.001 14.161 10.376 19.194 0.016 0.020 0.718 0.805 1.586 0.805 0.002 0 0.073 0 0.077 0 0.867 0 1.57-0.785 1.586-0.805 4.377-5.033 10.377-12.193 10.377-19.194 0-6.685-5.383-12.001-12.002-12.001zM16.117 29.883c-0.021 0.020-0.082 0.064-0.135 0.098-0.010-0.027-0.084-0.086-0.129-0.133-3.665-4.217-9.853-11.334-9.853-17.847 0-5.514 4.487-10.001 10-10.001 5.516 0 10.002 4.487 10.002 10.002 0 6.512-6.188 13.629-9.885 17.881z">
+                </path>
+            </symbol>
+
+            <symbol id="icon-mail" viewBox="0 0 32 32">
+                <path fill="currentColor"
+                    d="M26.666 0h-21.332c-2.934 0-5.334 2.4-5.334 5.333v21.333c0 2.934 2.4 5.334 5.334 5.334h21.332c2.936 0 5.334-2.4 5.334-5.334v-21.333c0-2.934-2.398-5.333-5.334-5.333zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.864-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z">
+                </path>
+            </symbol>
+
+            <symbol id="icon-phone-square" viewBox="0 0 24 28">
+                <path fill="currentColor"
+                    d="M20 18.641c0-0.078 0-0.172-0.031-0.25-0.094-0.281-2.375-1.437-2.812-1.687-0.297-0.172-0.656-0.516-1.016-0.516-0.688 0-1.703 2.047-2.312 2.047-0.313 0-0.703-0.281-0.984-0.438-2.063-1.156-3.484-2.578-4.641-4.641-0.156-0.281-0.438-0.672-0.438-0.984 0-0.609 2.047-1.625 2.047-2.312 0-0.359-0.344-0.719-0.516-1.016-0.25-0.438-1.406-2.719-1.687-2.812-0.078-0.031-0.172-0.031-0.25-0.031-0.406 0-1.203 0.187-1.578 0.344-1.031 0.469-1.781 2.438-1.781 3.516 0 1.047 0.422 2 0.781 2.969 1.25 3.422 4.969 7.141 8.391 8.391 0.969 0.359 1.922 0.781 2.969 0.781 1.078 0 3.047-0.75 3.516-1.781 0.156-0.375 0.344-1.172 0.344-1.578zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z">
+                </path>
+            </symbol>
+
+        </defs>
+    </svg>
+
+</body>
+
+</html>
